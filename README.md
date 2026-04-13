@@ -10,11 +10,13 @@ _The overview of PA-SfM pipeline._
 
 ## BibTeX
 
-```
-@article{li2026pa-sfm,    
-  title={PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging},    
-  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Chen, Qian and Wu, Shuang and Wang, Yibing and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and Yao, Boxin and Yao, Yao and Li, Changhui},    
-  journal={ResearchGate preprint RG.2.2.32941.04328},    
-  year={2026},       
-}
+```   
+@article{li2026pa,   
+  title={PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging},        
+  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Chen, Qian and Wang, Yibing and Wu, Shuang and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and others},      
+  journal={bioRxiv},       
+  pages={2026--04},       
+  year={2026},      
+  publisher={Cold Spring Harbor Laboratory}  
+}    
 ```
