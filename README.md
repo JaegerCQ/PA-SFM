@@ -4,12 +4,6 @@
 
 We introduce PA-SfM, a tracker-free differentiable acoustic structure-from-motion (SfM) framework that recovers relative imaging poses directly from PA measurements. By integrating a differentiable acoustic radiation model with hierarchical optimization and rigid array constraints, PA-SfM jointly estimates inter-view transformations and reconstructs 3D PA volumes without external pose measurements. We demonstrate genuine freehand 3D PAI of human hand vasculature, in which arbitrary hand motion over approximately 1 s provides multi-view measurements from which PA-SfM recovers the relative poses and jointly reconstructs a large FOV vascular network without motion tracking or predefined trajectories.  
 
-![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/pipeline_final.png)        
-_The overview of PA-SfM pipeline._    
-
-![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/freehand.png)        
-_PA-SfM freehand 3D reconstructions of hand vessels._     
-
 ![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/sequential_display.png)           
 _Repeatability validation of PA-SfM freehand 3D reconstruction of hand vessels._       
 
@@ -68,7 +62,7 @@ tail -f main_group3_pose_range.log
 ```   
 @article{li2026pa,   
   title={PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging},        
-  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Chen, Qian and Wang, Yibing and Wu, Shuang and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and others},      
+  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Huang, Hao and Wang, Xuanhao and Shi, Junhui and Chen, Qian and Wang, Yibing and Wu, Shuang and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and others},      
   journal={bioRxiv},       
   pages={2026--04},       
   year={2026},      
