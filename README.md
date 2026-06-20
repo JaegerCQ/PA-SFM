@@ -116,4 +116,4 @@ tail -f main_group3_pose_range.log
 
 ## Ackonwledgement
 
-We are deeply grateful to Professor Chulhong Kim, Professor Junhui Shi, Dr. Seongwook Choi, Dr Xuanhao Wang, Dr Hao Huang and Dr Zhibo Xiao for providing the invaluable in vivo experimental data.
+We are deeply grateful to Professor Chulhong Kim, Professor Junhui Shi, Dr. Seongwook Choi, Dr. Xuanhao Wang, Dr. Hao Huang and Dr. Zhibo Xiao for providing the invaluable in vivo experimental data.
