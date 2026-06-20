@@ -1,6 +1,6 @@
 # PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging    
 
-[***Preprint paper***](https://www.biorxiv.org/content/10.64898/2026.04.06.716718v4)
+[***Preprint paper***](https://doi.org/10.13140/RG.2.2.32941.04328)
 
 We introduce PA-SfM, a tracker-free differentiable acoustic structure-from-motion (SfM) framework that recovers relative imaging poses directly from PA measurements. By integrating a differentiable acoustic radiation model with hierarchical optimization and rigid array constraints, PA-SfM jointly estimates inter-view transformations and reconstructs 3D PA volumes without external pose measurements. We demonstrate genuine freehand 3D PAI of human hand vasculature, in which arbitrary hand motion over approximately 1 s provides multi-view measurements from which PA-SfM recovers the relative poses and jointly reconstructs a large FOV vascular network without motion tracking or predefined trajectories.  
 
