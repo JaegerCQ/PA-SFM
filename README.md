@@ -5,7 +5,7 @@
 We introduce PA-SfM, a tracker-free differentiable acoustic structure-from-motion (SfM) framework that recovers relative imaging poses directly from PA measurements. By integrating a differentiable acoustic radiation model with hierarchical optimization and rigid array constraints, PA-SfM jointly estimates inter-view transformations and reconstructs 3D PA volumes without external pose measurements. We demonstrate genuine freehand 3D PAI of human hand vasculature, in which arbitrary hand motion over approximately 1 s provides multi-view measurements from which PA-SfM recovers the relative poses and jointly reconstructs a large FOV vascular network without motion tracking or predefined trajectories.  
 
 ![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/sequential_display.png)           
-_Repeatability validation of PA-SfM freehand 3D reconstruction of hand vessels._       
+_Repeatability validation of PA-SfM freehand 3D reconstruction of hand vessels._        
 
 ## Create Conda Environment   
 
@@ -42,6 +42,17 @@ data/
   processed_signal_group03_pose001.txt
   ...
 ```
+
+## Settings
+
+Adjust this according to the number of GPUs you have.
+In `run_group3_pose_range.sh`, modify:
+
+```shellscript
+GPU_IDS=(0 1 2 3)
+```
+
+The default setup is intended to run on four RTX 4090D GPUs. Each pose reconstruction takes about 26 minutes, and the full PA-SfM run for all 10 poses completes in under 4 hours.
 
 ## Run Pipeline  
 
