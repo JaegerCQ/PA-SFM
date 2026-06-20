@@ -33,6 +33,7 @@ pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 \
 
 ## Data Layout   
 
+Note: If you need to use this data in any context, please make sure to contact junhuishi@outlook.com.
 Place input files under `data/` with names expected by `run_group3_pose_range.sh`, for example:
 
 ```text
@@ -68,15 +69,28 @@ Monitor progress:
 tail -f main_group3_pose_range.log
 ```
 
-## BibTeX
+## Citation 
 
 ```   
 @article{li2026pa,   
   title={PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging},        
-  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Huang, Hao and Wang, Xuanhao and Shi, Junhui and Chen, Qian and Wang, Yibing and Wu, Shuang and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and others},      
+  author={Li, Shuang and Gao, Jian and Kim, Chulhong and Choi, Seongwook and Huang, Hao and Wang, Xuanhao and Shi, Junhui and Chen, Qian and Wang, Yibing and Wu, Shuang and Zhang, Yu and Huang, Tingting and Zhou, Yucheng and Yao, Boxin and Yao, Yao and Li, Changhui},      
   journal={bioRxiv},       
   pages={2026--04},       
   year={2026},      
   publisher={Cold Spring Harbor Laboratory}  
 }    
 ```
+
+```
+@article{wang2025cross,  
+  title={Cross-regional real-time visualization of systemic physiology and dynamics with 3D panoramic photoacoustic computed tomography (3D-PanoPACT)},  
+  author={Wang, Xuanhao and Meng, Yuqian and Sun, Mingli and Gao, Xiali and Wang, Yuqi and Wang, Shaobo and Wang, Kaiyue and Wang, Ruofan and Ren, Danyang and Yin, Yonggang and others},  
+  journal={Nature Communications},  
+  volume={16},  
+  number={1},  
+  pages={10077},  
+  year={2025},  
+  publisher={Nature Publishing Group UK London}  
+}  
+```   
