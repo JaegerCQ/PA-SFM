@@ -1,12 +1,67 @@
 # PA-SfM: Tracker-free differentiable acoustic radiation for freehand 3D photoacoustic imaging    
 
-[***Preprint paper***](https://doi.org/10.13140/RG.2.2.32941.04328)
+[***Preprint paper***](https://www.biorxiv.org/content/10.64898/2026.04.06.716718v4)
 
-Three-dimensional (3D) handheld photoacoustic tomography typically relies on bulky and expensive external positioning trackers to correct motion artifacts, which severely limits its clinical flexibility and accessibility. To address this challenge, we present PA-SfM, a tracker-free framework that leverages exclusively single-modality photoacoustic data for both sensor pose recovery and high-fidelity 3D reconstruction via differentiable acoustic radiation modeling. Unlike traditional Structure-from-Motion (SfM) methods that formulate pose estimation as a geometry-driven optimization over visual features, PA-SfM integrates the acoustic wave equation into a differentiable programming pipeline. By leveraging a high-performance, GPU-accelerated acoustic radiation kernel, the framework simultaneously optimizes the 3D photoacoustic source distribution and the sensor array pose via gradient descent. To ensure robust convergence in freehand scenarios, we introduce a coarse-to-fine optimization strategy that incorporates geometric consistency checks and rigid-body constraints to eliminate motion outliers. We validated the proposed method through both numerical simulations and in-vivo rat experiments. The results demonstrate that PA-SfM achieves sub-millimeter positioning accuracy and restores high-resolution 3D vascular structures comparable to ground-truth benchmarks, offering a low-cost, software-defined solution for clinical freehand photoacoustic imaging.
+We introduce PA-SfM, a tracker-free differentiable acoustic structure-from-motion (SfM) framework that recovers relative imaging poses directly from PA measurements. By integrating a differentiable acoustic radiation model with hierarchical optimization and rigid array constraints, PA-SfM jointly estimates inter-view transformations and reconstructs 3D PA volumes without external pose measurements. We demonstrate genuine freehand 3D PAI of human hand vasculature, in which arbitrary hand motion over approximately 1 s provides multi-view measurements from which PA-SfM recovers the relative poses and jointly reconstructs a large FOV vascular network without motion tracking or predefined trajectories.  
 
-![image](https://github.com/JaegerCQ/PA-SFM/blob/main/pipeline_final.png)        
+![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/pipeline_final.png)        
 _The overview of PA-SfM pipeline._    
 
+![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/freehand.png)        
+_PA-SfM freehand 3D reconstructions of hand vessels._     
+
+![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/sequential_display.png)           
+_Repeatability validation of PA-SfM freehand 3D reconstruction of hand vessels._       
+
+## Create Conda Environment   
+
+To ensure reproducible results, it is strongly recommended to use the following pinned installation configuration and run the experiments on an NVIDIA RTX 4090D with CUDA 12.6.   
+```bash
+conda create -n PA_SfM --file locks/conda-explicit.txt
+conda activate PA_SfM
+
+python -m pip install \
+  --no-index \
+  --find-links locks/wheelhouse \
+  --require-hashes \
+  -r locks/requirements.pip-hash-lock.txt
+```
+
+If exact one-to-one reproducibility is not required, you can also create the environment using the following method.
+
+```bash
+conda create -n PA_SfM python=3.11 -y
+conda activate PA_SfM
+conda install -c conda-forge numpy scipy matplotlib jupyterlab ipykernel -y
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 \
+  --index-url https://download.pytorch.org/whl/cu126
+```
+
+## Data Layout   
+
+Place input files under `data/` with names expected by `run_group3_pose_range.sh`, for example:
+
+```text
+data/
+  sensor_location_group03_pose000.txt
+  processed_signal_group03_pose000.txt
+  processed_signal_group03_pose001.txt
+  ...
+```
+
+## Run Pipeline  
+
+```bash
+conda activate PA_SfM
+chmod +x run_group3_pose_range.sh
+nohup ./run_group3_pose_range.sh > main_group3_pose_range.log 2>&1 &
+```
+
+Monitor progress:
+
+```bash
+tail -f main_group3_pose_range.log
+```
 
 ## BibTeX
 
