@@ -93,4 +93,21 @@ tail -f main_group3_pose_range.log
   year={2025},  
   publisher={Nature Publishing Group UK London}  
 }  
-```   
+```
+
+```
+@article{choi2023deep,
+  title={Deep learning enhances multiparametric dynamic volumetric photoacoustic computed tomography in vivo (DL-PACT)},
+  author={Choi, Seongwook and Yang, Jinge and Lee, Soo Young and Kim, Jiwoong and Lee, Jihye and Kim, Won Jong and Lee, Seungchul and Kim, Chulhong},
+  journal={Advanced Science},
+  volume={10},
+  number={1},
+  pages={2202089},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+```
+
+## Ackonwledgement
+
+We are deeply grateful to Professor Chulhong Kim, Professor Junhui Shi, Dr. Seongwook Choi, Dr Xuanhao Wang, Dr Hao Huang and Dr Zhibo Xiao for providing the invaluable in vivo experimental data.
