@@ -1,0 +1,34 @@
+
+     active environment : PA_SfM
+    active env location : /home/gj/.conda/envs/PA_SfM
+            shell level : 2
+       user config file : /home/gj/.condarc
+ populated config files : /home/gj/.condarc
+          conda version : 24.5.0
+    conda-build version : 24.5.1
+         python version : 3.12.4.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=zen4
+                          __conda=24.5.0=0
+                          __cuda=12.6=0
+                          __glibc=2.35=0
+                          __linux=6.8.0=0
+                          __unix=0=0
+       base environment : /opt/anaconda3  (read only)
+      conda av data dir : /opt/anaconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /opt/anaconda3/pkgs
+                          /home/gj/.conda/pkgs
+       envs directories : /home/gj/.conda/envs
+                          /opt/anaconda3/envs
+               platform : linux-64
+             user-agent : conda/24.5.0 requests/2.32.2 CPython/3.12.4 Linux/6.8.0-87-generic ubuntu/22.04.5 glibc/2.35 solver/libmamba conda-libmamba-solver/24.1.0 libmambapy/1.5.8 aau/0.4.4 c/. s/. e/.
+                UID:GID : 1007:1007
+             netrc file : None
+           offline mode : False
+
+
