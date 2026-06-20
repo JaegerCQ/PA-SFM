@@ -7,6 +7,12 @@ We introduce PA-SfM, a tracker-free differentiable acoustic structure-from-motio
 ![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/sequential_display.png)           
 _Repeatability validation of PA-SfM freehand 3D reconstruction of hand vessels._        
 
+![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/pipeline_final.png)        
+_The overview of PA-SfM pipeline._    
+
+![image](https://github.com/JaegerCQ/PA-SfM/tree/LS-GJ/pictures/freehand.png)        
+_PA-SfM freehand 3D reconstructions of hand vessels._
+
 ## Create Conda Environment   
 
 To ensure reproducible results, it is strongly recommended to use the following pinned installation configuration and run the experiments on an NVIDIA RTX 4090D with CUDA 12.6.   
