@@ -52,7 +52,7 @@ data/
 
 ## Settings
 
-Adjust this according to the number of GPUs you have.
+Adjust this according to the number of GPUs you have. The shellscript supports single-GPU, dual-GPU, 4-GPU, and 8-GPU configurations.
 In `run_group3_pose_range.sh`, modify:
 
 ```shellscript
