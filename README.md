@@ -15,7 +15,7 @@ _PA-SfM freehand 3D reconstructions of hand vessels._
 
 ## Create Conda Environment   
 
-To ensure reproducible results, it is strongly recommended to use the following pinned installation configuration and run the experiments on an NVIDIA RTX 4090D with CUDA 12.6.   
+To ensure reproducible results, it is strongly recommended to use the following pinned installation configuration and run the experiments on NVIDIA RTX 4090D with CUDA 12.6.   
 ```bash
 conda create -n PA_SfM --file locks/conda-explicit.txt
 conda activate PA_SfM
