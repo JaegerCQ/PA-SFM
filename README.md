@@ -39,7 +39,7 @@ pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 \
 
 ## Data Layout   
 
-Note: If you need to use this data in any context, please make sure to contact junhuishi@outlook.com and xh-wang@zhejianglab.org.
+(Note: The data was acquired with 3D-PanoPACT system from Professor Junhui Shi and Dr. Xuanhao Wang. If you need to use this data in any context, please make sure to contact us.)
 Place input files under `data/` with names expected by `run_group3_pose_range.sh`, for example:
 
 ```text
